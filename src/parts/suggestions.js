@@ -78,7 +78,7 @@ export default {
                             case 'Escape' :
                             case 'Esc': // IE11
                                 this.dropdown.hide();
-                                e.target.blur();
+                                !userInput && e.target.blur(); //TODO: not sure about this. The input stay focused because it HAS focus. The strange sting is only you cannot interact with it anymore if no userInput is allowed (because the dropdown stays hidden)
                                 break;
 
                             case 'ArrowRight' :
