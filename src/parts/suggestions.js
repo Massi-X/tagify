@@ -78,6 +78,7 @@ export default {
                             case 'Escape' :
                             case 'Esc': // IE11
                                 this.dropdown.hide();
+                                e.target.blur();
                                 break;
 
                             case 'ArrowRight' :
