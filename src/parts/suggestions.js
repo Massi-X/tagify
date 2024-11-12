@@ -49,7 +49,8 @@ export default {
                     selectedElm = this.DOM.dropdown.querySelector(_s.classNames.dropdownItemActiveSelector),
                     selectedElmData = this.dropdown.getSuggestionDataByNode(selectedElm),
                     isMixMode = _s.mode == 'mix',
-                    isSelectMode = _s.mode == 'select';
+                    isSelectMode = _s.mode == 'select',
+                    userInput = _s.userInput;
 
                 _s.hooks.beforeKeyDown(e, {tagify:this})
                     .then(result => {
